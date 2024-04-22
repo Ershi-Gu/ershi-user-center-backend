@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: user-hub
+
+  # 配置数据源
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 200303078
+    url: jdbc:mysql://localhost:3306/ershi_userhub_prod?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8
+
+server:
+  port: 8081
+  servlet:
+    session:
+      persistent: false # 禁止 session 持久化
+      timeout: 86400 # 设置 session 过期时间为一天
+
+    # 设置应用请求地址
+    context-path: /api
+
+mybatis-plus:
+
+  global-config:
+    db-config:
+      logic-delete-field: isDelete # 全局逻辑删除的实体字段名(since 3.3.0,配置后可以忽略不配置步骤2)
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+
+  mapper-locations: classpath:mapper/*.xml
