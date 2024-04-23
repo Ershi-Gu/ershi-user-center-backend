@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 200303078
-    url: jdbc:mysql://localhost:3306/ershi_userhub_prod?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8
+    url: jdbc:mysql://119.91.135.236:3306/ershi_userhub_prod?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8
 
 server:
   port: 8081

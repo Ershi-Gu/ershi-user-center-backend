@@ -28,7 +28,6 @@ import javax.servlet.http.HttpSession;
  * 用户服务实现类
  *
  * @author Eershi
- * @date 2024/04/13
  */
 @Slf4j
 @Service
@@ -119,7 +118,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         // 3. 校验账号是否包含特殊字符
         Matcher matcher = Pattern.compile(UserConstant.SPECIAL_CHARACTERS).matcher(userAccount);
         if (matcher.find()) {
-            throw new BusinessException(ErrorCode.PARAMS_ERROR, "邀请码错误");
+            throw new BusinessException(ErrorCode.PARAMS_ERROR, "账号不符合要求");
         }
 
         // 4. 密码不少于8位

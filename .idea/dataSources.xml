@@ -15,5 +15,12 @@
       <jdbc-url>jdbc:mysql://localhost:3306/ershi_userhub_prod</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="ershi_userhub_prod" uuid="e60e2c2c-254c-46c9-8afa-a89d86aa77d0">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://119.91.135.236:3306/ershi_userhub_prod</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
