@@ -6,8 +6,8 @@ spring:
   # 配置数据源
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: 200303078
+    username: 
+    password: 
     # 本地可以配置 userSSL=true，线上没有认证配置 false
     url: jdbc:mysql://localhost:3306/ershi_userhub?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8
 
