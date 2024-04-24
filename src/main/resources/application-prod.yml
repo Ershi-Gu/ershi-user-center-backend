@@ -5,9 +5,9 @@ spring:
   # 配置数据源
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: 200303078
-    url: jdbc:mysql://119.91.135.236:3306/ershi_userhub_prod?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8
+    username: 
+    password: 
+    url: jdbc:mysql://xx:xx/xx?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8
 
 server:
   port: 8081
